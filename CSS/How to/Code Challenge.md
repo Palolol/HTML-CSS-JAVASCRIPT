@@ -1,0 +1,32 @@
+# Code Challenge
+
+Challenge: How To Add CSS
+Test your understanding of CSS by completing a small coding challenge.
+
+Instructions
+Inside the editor, complete the following steps:
+Add an external stylesheet by inserting a <link> element with rel "stylesheet" and href "mystyle.css"
+Add an internal stylesheet: inside the <style> tag, set h1 color to navy
+Add an inline style: on the <p> element, set color to red
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- add external stylesheet link here -->
+<link rel="stylesheet" href="mystyle.css" />
+<style>
+/* add internal CSS here */
+h1{
+color: navy;
+}
+</style>
+</head>
+<body>
+
+<h1>Three Ways to Add CSS</h1>
+<p style="color:red">This paragraph uses inline CSS.</p>
+
+</body>
+</html>
+
+NEXT> [[CSS Comment]]

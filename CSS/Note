@@ -1,0 +1,18 @@
+មេរៀនទី​ ៥ៈ
+CSS: Cascading Style Sheet
+
+មានវិធី ៣ យ៉ាងដើម្បីភ្ចាប់​ CSS និង HTML គឺ
+1. Inline: សរសេរ Code Style ដោយផ្ទាល់ក្នុង Tag HTML.
+    Ex. <p style="text-align:center",> paragraph</p>
+
+2. Internal: សរសេរ Code Style នៅចន្លោះ​ tage
+<head>
+    <stle> 
+        code style sheet
+    </style>
+</head>
+3. External: សរសេរ​ code style នៅក្នុង file stylesheet (.css) ហើយតភ្ចាប់តាមរយៈ Code 
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+------------------------------
