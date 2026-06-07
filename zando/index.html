@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop - Complete Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <img src="images/banner.jpg" alt="50% Off Banner">
+    </div>
+
+    <div class="container">
+
+        <div class="row brand-row">
+            <div class="col-2"><img src="images/361_Web.png" alt="361"></div>
+            <div class="col-2"><img src="images/Gatoni_Web.png" alt="Gatoni"></div>
+            <div class="col-2"><img src="images/HyggeZone_Web.png" alt="Hygge Zone"></div>
+            <div class="col-2"><img src="images/Routine_Web.png" alt="Routine"></div>
+            <div class="col-2"><img src="images/Sisburma_Web.png" alt="Sisburma"></div>
+            <div class="col-2"><img src="images/Zando_Web.png" alt="Zando"></div>
+        </div>
+
+        <! --Carusel/Slideshow-- >
+        <div class="row text-section">
+            <div class="col-6">
+                <div class="slideshow-container">
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/2026-04-01 11.00.40-1.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/UD9.99 SS Cate Zando (2160x534) copy-100.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/ZandoHome_Cate_ZANDO (2160x534).jpg (2).jpg" style="width:100%">
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>Contact US</h2>
+                <p> --Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum saepe, ut dicta ratione quisquam quo
+                    culpa esse distinctio. Aperiam dolorem aspernatur, vitae sed distinctio quod quisquam ratione in
+                    tempore possimus.-- </p>
+            </div>
+        </div>
+
+        <div class="row gallery">
+            <div class="col-4 card">
+                <img src="images/8.jpg" alt="Lifestyle Collection">
+            </div>
+            <div class="col-4 card">
+                <img src="images/10.jpg" alt="Smart Casual Collection">
+            </div>
+            <div class="col-4 card">
+                <img src="images/11.jpg" alt="Tops Collection">
+            </div>
+        </div>
+
+        <h3 class="section-title">FEATURED PRODUCTS</h3>
+
+        <div class="row product-grid">
+            <div class="col-3">
+                <img src="images/img (1).jpg" alt="Product">
+                <p class="price">US $4.19US <del>$13.95</del></p>
+                <p>Product Description</p>
+            </div>
+            <div class="col-3">
+                <img src="images/img (3).jpg" alt="Product">
+                <p class="price">US $4.19US <del>$13.95</del></p>
+                <p>Product Description</p>
+            </div>
+            <div class="col-3">
+                <img src="images/img (4).jpg" alt="Product">
+                <p class="price">US $4.19US <del>$13.95</del></p>
+                <p>Product Description</p>
+            </div>
+            <div class="col-3">
+                <img src="images/img (5).jpg" alt="Product">
+                <p class="price">US $4.19US <del>$13.95</del></p>
+                <p>Product Description</p>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer-orange">
+        <div class="row footer-container">
+            <div class="col-1">
+                <h4>ZANDO APP</h4>
+                <img src="images/qr_code_app.png" alt="QR Code" class="qr-img">
+            </div>
+
+            <div class="col-2">
+                <h4>LOYALTY</h4>
+                <p>Membership & Benefits</p>
+            </div>
+
+            <div class="col-2">
+                <h4>FOLLOW US</h4>
+                <p>
+                    <a href="https://www.facebook.com">Facebook</a><br>
+                    <a href="https://www.instagram.com">Instagram</a><br>
+                    <a href="https://www.twitter.com">Twitter</a><br>
+                    <a href="https://www.tiktok.com">TikTok</a>
+                </p>
+            </div>
+
+            <div class="col-2">
+                <h4>CUSTOMER SERVICE</h4>
+                <p>Online Exchange Policy<br>Shipping & Delivery</p>
+            </div>
+
+            <div class="col-2">
+                <h4>CONTACT US</h4>
+                <p>
+                    Customer.care@zando.com<br>
+                    Shipping & Delivery<br>
+                    <a href="https://t.me/+GxAmub6Ub8v1YTF1">Telegram</a>
+                </p>
+            </div>
+
+            <div class="col-3">
+                <h4>WE ACCEPT</h4>
+                <img src="images/payment.png" alt="payment" class="payment-img">
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
